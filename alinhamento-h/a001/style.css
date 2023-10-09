@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #FF6000;
+    --cor02: #403D38;
+    --cor03: #F8F7F3;
+
+    --cor04: #F8F7F3;
+    --cor05: #373636;
+    --cor06: #15AAFF;
+
+    --cor7: #FFA3FD;
+    --cor8: #191825;
+    --cor9: #865DFF;
+}
+
+body {
+    background-color: var(--cor9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 1500px;
+    
+    background-color: var(--cor03);
+    margin: auto;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__titulos {
+
+    margin-bottom: 45px;
+}
+
+.titulo__centro {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    color: var(--cor05);
+    font-size: 3em;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+.container__flex {
+    display: flex;
+    justify-content: center;
+
+    padding: 30px;
+    margin-bottom: 80px;
+    background-color: var(--cor06);
+}
+
+@media all and (max-width: 1270px){
+    .container__flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container__paragrafo{
+    display: block;
+    max-width: 600px;
+    background-color: var(--cor05);
+}
+
+#container__padding {
+   padding-top: 180px;
+}
+
+@media all and (max-width: 1270px){
+    .container__paragrafo{
+        margin: auto;
+    }
+
+    #container__padding {
+        padding-top: 0px;
+    }
+}
+
+.conteudo__p {
+    background-color: var(--cor04);
+    color: var(--cor06);
+    font-weight: bold;
+    text-align: justify;
+    border-radius: 12px;
+
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.container__img__lado {
+    max-width: 600px;
+    padding: 10px;
+    display: flex;
+    
+
+    background-color: var(--cor7);
+}
+
+@media all and (max-width: 1270px){
+    .container__img__lado {
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+.img__conteudo{
+    background-color: var(--cor8);
+}
+
+footer{
+    background-color: var(--cor8);
+    text-align: center;
+
+    padding: 15px;
+    margin-top: 7px;
+}
+
+.p__footer {
+    color: var(--cor9);
+    font-size: 1.4em;
+}
