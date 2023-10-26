@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personagens</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container__zoro {
+            background-image: linear-gradient(45deg, #d9045200, #26010f00);
+
+            display: flex;
+            padding: 10px;
+            max-width: 700px;
+            height: 90vh;
+            
+        }
+
+        @media all and (max-width: 700px){
+            .container__zoro {
+                flex-direction: column;
+            }
+        }
+
+        .lista__flex {
+            display: flex;
+            list-style-type: none;
+        }
+
+        @media all and (max-width: 696px){
+            .lista__flex {
+                flex-direction: column;
+            }
+        }
+
+        .lista__flex li {
+            padding: 10px;
+        }
+
+        .container__paragrafo {
+            padding-top: 40px;
+            
+        }
+
+        .container__paragrafo p {
+            text-align: justify;
+            font-weight: bold;
+            color: white;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
+
+            
+    
+        }
+
+        .lista__flex img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section class="container__zoro">
+        <ul class="lista__flex">
+            <li>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../imagens/chopper-pp.jpeg" type="image/jpeg">
+                    <img src="../imagens/chopper-p.jpeg" alt="Imagem do Chopper">
+                </picture>
+            </li>
+
+            <li>
+                <div class="container__paragrafo">
+                    <p>Chopper é uma rena que ganhou a habilidade de se transformar em humano devido ao poder da Hito Hito no Mi. Ele é o médico da tripulação dos Chapéu de Palha e tem uma personalidade tímida e doce.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

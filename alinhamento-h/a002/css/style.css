@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #D90452;
+    --cor2: #8C0335;
+    --cor3: #590222;
+    --cor4: #26010F;
+    --cor5: #0D0D0D;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor3);
+}
+
+main {
+    background-color: var(--cor3);
+
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+}
+
+.titulos {
+    margin-bottom: 20px;
+}
+
+.titulo__centro {
+    font-size: 2.6em;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.342);
+    font-variant: small-caps;
+
+    padding: 10px;
+}
+
+.container__flex {
+   
+
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    
+}
+
+.imagens__flex {
+    display: flex;
+    list-style: none;
+
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+@media all and (max-width: 853px){
+    .imagens__flex {
+        flex-direction: column;
+    }
+}
+
+.imagens__flex > li {
+    padding: 10px;
+}
+
+#zoro img{
+    transition-duration: 0.5s;
+
+    border-radius: 50%;
+}
+
+#zoro img:hover {
+    box-shadow: 0px 0px 15px rgb(0, 255, 0);
+
+    border-radius: 40%;
+    border: none;
+}
+
+#luffy img {
+    transition-duration: 0.5s;
+
+    border-radius: 50%;
+}
+
+#luffy img:hover {
+    box-shadow: 0px 0px 15px var(--cor1);
+    border-radius: 40%;
+}
+
+#chopper img {
+    transition-duration: 0.5s;
+
+    border-radius: 50%;
+}
+
+#chopper img:hover{
+    box-shadow: 0px 0px 15px rgb(0, 157, 255);
+    border-radius: 40%;
+}
+
+.tit__horizontal {
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.titulo__horizontal {
+    font-size: 2.4em;
+    background-color: var(--cor2);
+    border-radius: 15px 8px;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
+    padding: 10px;
+}
+
+.cont__iframe {
+    padding: 10px;
+    width: 700px;
+    height: 45vh;
+}
+
+.informacao {
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor4));
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+    border: 3px solid var(--cor2);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.301);
+}
+ 

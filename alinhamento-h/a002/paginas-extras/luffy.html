@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personagens</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container__zoro {
+            background-image: linear-gradient(45deg, #d9045200, #26010f00);
+
+            display: flex;
+            padding: 10px;
+            max-width: 700px;
+            height: 90vh;
+            
+        }
+
+        @media all and (max-width: 700px){
+            .container__zoro {
+                flex-direction: column;
+            }
+        }
+
+        .lista__flex {
+            display: flex;
+            list-style-type: none;
+        }
+
+        @media all and (max-width: 696px){
+            .lista__flex {
+                flex-direction: column;
+            }
+        }
+
+        .lista__flex li {
+            padding: 10px;
+        }
+
+        .container__paragrafo {
+            padding-top: 40px;
+            
+        }
+
+        .container__paragrafo p {
+            text-align: justify;
+            font-weight: bold;
+            color: white;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
+
+            
+    
+        }
+
+        .lista__flex img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section class="container__zoro">
+        <ul class="lista__flex">
+            <li>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../imagens/luffy-pp.jpg" type="image/jpg">
+                    <img src="../imagens/luffy-p.jpg" alt="Imagem do Luffy">
+                </picture>
+            </li>
+
+            <li>
+                <div class="container__paragrafo">
+                    <p>Luffy é um jovem pirata com o sonho de se tornar o Rei dos Piratas. Ele possui uma personalidade alegre, corajosa e destemida, e seu corpo ganhou a capacidade de esticar como resultado do consumo de uma Akuma no Mi, a Gomu Gomu no Mi.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

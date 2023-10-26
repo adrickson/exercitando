@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando Imagens</title>
+    <link rel="shortcut icon" href="desafio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="titulos">
+            <h1 class="titulo__centro">Escolha um personagem</h1>
+        </section>
+
+        <section class="container__flex">
+            <ul class="imagens__flex">
+
+                <li>
+                    <a href="paginas-extras/zoro.html" id="zoro" target="descricao">
+                        <picture>
+                            <source media="(max-width: 1293px)" srcset="imagens/zoro-p.png" type="image/png">
+                            <img src="imagens/zoro.png" alt="Imagem do Zoro">
+                        </picture>
+                    </a>
+                </li>
+
+                <li id="luffy">
+                    <a href="paginas-extras/luffy.html" target="descricao">
+                        <picture>
+                            <source media="(max-width: 1293px)" srcset="imagens/luffy-p.jpg" type="image/jpg">
+                            <img src="imagens/luffy.jpg" alt="Imagem do Luffy">
+                        </picture>
+                    </a>
+                </li>
+
+                <li id="chopper">
+                    <a href="paginas-extras/chopper.html" target="descricao">
+                        <picture>
+                            <source media="(max-width: 1293px)" srcset="imagens/chopper-p.jpeg" type="image/jpeg">
+                            <img src="imagens/chopper.jpeg" alt="Imagem do Chopper">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container__flex">
+            <div class="tit__horizontal">
+                <h2 class="titulo__horizontal">Sobre:</h2>
+            </div>
+
+            <div class="cont__iframe">
+                <iframe src="" frameborder="0" class="informacao" name="descricao"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
