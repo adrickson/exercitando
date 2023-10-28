@@ -132,4 +132,23 @@ main {
     border: 3px solid var(--cor2);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.301);
 }
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+
+    padding: 10px;
+}
+
+.autoral {
+    font-weight: bolder;
+    font-size: 1.2em;
+    border-radius: 8px 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.445);
+    background-color: var(--cor2);
+
+    display: inline-block;
+    padding: 10px;
+}
  
