@@ -64,7 +64,7 @@ main {
 }
 
 .container__principal {
-    background: url('imagens/maxresdefault.jpg') top right no-repeat fixed;
+    background: url('imagens/guanabara.jpg') top right no-repeat fixed;
     background-size: cover;
     box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.534);
     padding: 10px;
