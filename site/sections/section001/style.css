@@ -5,6 +5,14 @@
     padding: 0px;
 }
 
+@keyframes animacao {
+    0%{transform: translate(0px, 0px);}
+    50%{transform: translate(-1.9%,0px);}
+    75% {transform: translate(1.2%,0px);}
+    100% {transform: translate(0px, 0px);}
+
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #010626;
@@ -61,6 +69,7 @@ main {
     box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.534);
     padding: 10px;
     padding-bottom: 30px;
+    height: 60vh;
 }
 
 .lista__flex {
@@ -139,4 +148,18 @@ a#link__externo:hover{
     box-shadow: 0px 0px 12px rgb(255, 44, 44);
     text-decoration: underline;
     transition-duration: 0.4s;
+}
+
+footer{
+    padding: 10px;
+    background-color: #152685;
+    text-align: center;
+    color: white;
+}
+
+.criacao {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.39);
+
 }
