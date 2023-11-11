@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Section</title>
-    <style>
-        main {
-            background-color: blue;
-
-            max-width: 1400px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <section>
-            <h1>Teste de Conteúdo</h1>
+        <section class="cont__titulo">
+            <h1 class="titulo__centro">Teste de Conteúdo</h1>
+        </section>
+
+        <section class="cont__paragrafo">
+            <p class="conteudo__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum consectetur, dolorum sit odio nulla praesentium? Error, impedit quam eius optio sed unde illo? Quia, soluta. Natus dolores adipisci inventore?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto minima ea neque voluptatem dolores, repellendus cumque earum nulla sunt, dolor accusantium corporis eaque possimus eveniet ipsa blanditiis ullam voluptatibus!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quaerat, ex dignissimos reiciendis beatae accusamus. Consequatur, recusandae esse rem laboriosam veniam, perferendis provident exercitationem, at praesentium culpa consequuntur iure autem.</p>
+        </section>
+
+        <section class="cont__titulo">
+            <h2 class="titulo__centro">Escolha um Curso</h2>
+        </section>
+
+        <section class="container__principal">
+            <ul class="lista__flex">
+                <li><a href="javascript.html" target="cursos">JavaScript</a></li>
+                <li><a href="cursohtml.html" target="cursos">HTML</a></li>
+                <li><a href="php.html" target="cursos">PHP</a></li>
+            </ul>
+
+            <div class="cont__iframe">
+                <iframe src="aviso.html" frameborder="0" name="cursos" class="estilo__iframe">DESCULPE SEU NAVEGADOR NÃO É COMPATÍVEL COM ISSO.</iframe>
+            </div>
+
+            <div class="cont__link"><a href="https://www.youtube.com/@CursoemVideo/playlists" id="link__externo" target="_blank">Todas as playlists!</a></div>
         </section>
     </main>
 </body>
