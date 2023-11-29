@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* ESTILO PARA TELAS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #865DFF;
+    --cor2: #191825;
+    --cor3: #FFA3FD;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+header {
+    background-color: var(--cor1);
+}
+
+nav {
+    text-align: center;
+
+    padding: 15px
+}
+
+nav a {
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: var(--cor2);
+    border-radius: 6px;
+    transition: 0.5s;
+
+    padding: 7px;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    box-shadow: 0px 0px 10px rgb(171, 0, 214);
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 2.4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 1200px;
+    height: 80.6vh;
+    
+    margin: auto;
+}
+
+.separando {
+    text-align: center;
+
+    padding: 10px;
+}
+
+h1.centro {
+    display: inline-block;
+    background-color: var(--cor3);
+    border-radius: 5px 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+
+    padding: 6px;
+}
+
+.cont__iframe {
+    max-width: 580px;
+    height: 470px;
+    border: 3px solid var(--cor1);
+    border-collapse: collapse;
+    border-radius: 20px 35px;
+
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.estilo__iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 35px;
+}
+
+.conteudo__principal {
+
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.container__p {
+    text-align: center;
+}
+
+.texto {
+    font-size: 1.5em;
+    color: white;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+div.animacao {
+    display: inline-block;
+    transition: 0.5s;
+
+    margin-top: 10px;
+}
+
+div.animacao:hover {
+    transform: translate(-3px, -3px);
+    transition: 0.5s;
+}
+
+.animacao a {
+    color: var(--cor2);
+    background-color: var(--cor3);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.411);
+
+    padding: 5px;
+}
+
+.animacao a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+    font-weight: bolder;
+    
+    padding: 10px;
+}
+
+footer p {
+    color: var(--cor2);
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.459);
+}
