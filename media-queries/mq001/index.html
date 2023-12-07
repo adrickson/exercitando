@@ -19,15 +19,29 @@
 
         <form action="" method="post" autocomplete="on">
 
-            <fieldset>
+            <fieldset class="cont__grup">
 
-                <label for="iusu">Usuário</label>
-                <input type="text" name="usu" id="iusu" required minlength="5" placeholder="Seu Nome" autocomplete="name">
+                <div class="cont__lab__inp">
 
-                <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha" required min="5" max="20" placeholder="Sua senha">
+                    <label for="iusu" class="design__label">Usuário</label>
 
-                <input type="submit" value="Logar">
+                    <input type="text" name="usu" id="iusu" required minlength="5" placeholder="Seu Nome" autocomplete="name" class="cont__input">
+
+                </div>
+
+                <div class="cont__lab__inp">
+
+                    <label for="isenha" class="design__label">Senha</label>
+
+                    <input type="password" name="senha" id="isenha" required min="5" max="20" placeholder="Sua senha  5 a 20" class="cont__input">
+
+                </div>
+
+                <div class="cont__enviar">
+
+                    <input type="submit" value="Logar" class="cont__input" id="enviar">
+
+                </div>
             </fieldset>
 
         </form>
