@@ -14,6 +14,7 @@ body {
     background: black url('../imagens/back-celular.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
 
     height: 100vh;
