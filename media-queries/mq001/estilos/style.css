@@ -10,14 +10,13 @@
     padding: 0px;
 }
 
-html {
-    height: 100vh;
-}
-
 body {
-    background: url('../imagens/back-celular.jpg') no-repeat;
+    background: black url('../imagens/back-celular.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
+    overflow: hidden;
+
+    height: 100vh;
 }
 
 main {
@@ -60,7 +59,7 @@ fieldset.cont__grup {
     margin: auto;
     margin-top: 20px;
     padding: 10px;
-    width: 390px;
+    width: 300px;
 }
 
 div.cont__lab__inp {
@@ -87,7 +86,7 @@ input.cont__input {
     display: block;
     margin-top: 13px;
     padding: 15px;
-    width: 370px;
+    width: 210px;
 }
 
 div.cont__enviar {
