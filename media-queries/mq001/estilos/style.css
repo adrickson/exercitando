@@ -22,7 +22,7 @@ body {
 main {
     
     padding: 20px;
-    width: 350px;
+    width: 330px;
     margin: auto;
 
 }
@@ -110,3 +110,6 @@ input#enviar:hover {
 }
 
 img#celular{display: block;}
+img#tablet{display: none;}
+img#notebook{display: none;}
+img#tv{display: none;}
