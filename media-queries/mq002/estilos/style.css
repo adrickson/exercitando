@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #3941ED;
+    --cor2: #3941ED;
+    --cor3: #6C39ED;
+    --cor4: #A739ED;
+}
+
+body {
+    background-image: linear-gradient(90deg, #3498bd, var(--cor1));
+
+    height: 100vh;
+}
