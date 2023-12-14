@@ -14,10 +14,30 @@
     --cor2: #3941ED;
     --cor3: #6C39ED;
     --cor4: #A739ED;
+    --cor5: #3498bd;
 }
 
 body {
-    background-image: linear-gradient(to bottom, #3498bd, var(--cor1));
+    background-color: var(--cor1);
 
+    position: relative;
     height: 100vh;
+
+}
+
+main {
+    
+    padding: 10px;
+    width: 90vw;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#containers {
+    background-color: var(--cor5);
+
+    padding: 10px;
 }
