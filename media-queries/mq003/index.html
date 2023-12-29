@@ -19,25 +19,27 @@
 
                     <div class="cont__lab__inp">
                         <label for="tn1">Num 1</label>
-                        <input type="number" name="num1" id="tn1" class="cor_caixa" onclick="mudacor()">
+                        <input type="number" name="num1" id="tn1" class="cor_caixa" required min="0" value="0">
                     </div>
 
-                    <div>
+                    <div class="sinal__soma">
                         <p>+</p>
                     </div>
 
                     <div class="cont__lab__inp">
                         <label for="tn2">Num 2</label>
-                        <input type="number" name="num2" id="tn2" class="cor_caixa" onclick="mudacor()">
+                        <input type="number" name="num2" id="tn2" class="cor_caixa" required min="0" value="0">
                     </div>
 
-                    <input type="button" value="Somar">
+                    <div class="botao">
+                        <input type="button" value="Somar" onclick="somar()">
+                    </div>
 
-                    <div>
+                    <div class="cont__resultado">
 
                         <label for="ires">Soma: </label>
 
-                        <output name="soma" id="ires">
+                        <output name="soma" id="ires" class="resposta">
                             0
                         </output>
                     </div>
@@ -47,6 +49,19 @@
             </form>
         </section>
     </main>
-    
+    <script>
+        function somar(){
+            var tn1 = window.document.querySelector('input#tn1')
+            var tn2 = window.document.getElementById('tn2')
+            var ires = window.document.getElementById('ires')
+
+            var num1 = Number(tn1.value)
+            var num2 = Number(tn2.value)
+            var soma = num1 + num2
+
+            ires.innerHTML = `${soma}`
+            
+        }
+    </script>
 </body>
 </html>

@@ -108,3 +108,61 @@ div.cont__lab__inp > input:focus {
     background-color: white;
     transition: 0.6s;
 }
+
+div.sinal__soma {
+    text-align: center;
+
+    margin-bottom: 7px;
+}
+
+div.sinal__soma > p {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+div.botao {
+    display: block;
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+div.botao > input {
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #f3ba4f;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+
+    width: 60%;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+div.botao > input:hover {
+    background-color: #f1a61b;
+    transition: 0.5s;
+    transform: translateY(-3px);
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.342);
+}
+
+div.cont__resultado {
+    background-color: var(--cor-5);
+    border-radius: 15px 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+    padding: 10px;
+}
+
+div.cont__resultado > label {
+    font-size: 1.1em;
+}
+
+output.resposta {
+    font-size: 1.1em;
+    background-color: var(--cor-2);
+    border-radius: 4px;
+
+    padding: 7px;
+}
