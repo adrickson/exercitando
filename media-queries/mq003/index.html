@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section class="container__principal">
+
+            <h1 class="tit__principal">Calculator</h1>
+
+            <form action="" method="get">
+
+                <fieldset class="cont__soma">
+                   <legend class="tit__forms">Calculadora de Soma</legend>
+
+                    <div class="cont__lab__inp">
+                        <label for="tn1">Num 1</label>
+                        <input type="number" name="num1" id="tn1" class="cor_caixa" onclick="mudacor()">
+                    </div>
+
+                    <div>
+                        <p>+</p>
+                    </div>
+
+                    <div class="cont__lab__inp">
+                        <label for="tn2">Num 2</label>
+                        <input type="number" name="num2" id="tn2" class="cor_caixa" onclick="mudacor()">
+                    </div>
+
+                    <input type="button" value="Somar">
+
+                    <div>
+
+                        <label for="ires">Soma: </label>
+
+                        <output name="soma" id="ires">
+                            0
+                        </output>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

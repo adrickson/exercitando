@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-1: #F29F05;
+    --cor-2: #F28705;
+    --cor-3: #F25C05;
+    --cor-4: #D93D04;
+    --cor-5: #F2F2F2;
+
+}
+
+body, html {
+    height: 100vh;
+    position: relative;
+}
+
+main {
+    background-color: var(--cor-5);
+
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+section.container__principal {
+    background-color: var(--cor-1);
+    border-radius: 8px;
+    border: 2px solid var(--cor-3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+
+    width: 80vw;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+h1.tit__principal {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+    color: var(--cor-5);
+    font-size: 1.9em;
+    font-variant: small-caps;
+
+    padding: 7px;
+}
+
+form {
+    background-color: #f25c0598;
+    border-radius: 5px 15px;
+    border: 3px solid var(--cor-3);
+    
+}
+
+fieldset.cont__soma {
+
+    padding: 10px;
+    border: none;
+    
+}
+
+legend.tit__forms {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+    font-size: 1.2em;
+
+    padding: 5px;
+}
+
+div.cont__lab__inp {
+    text-align: center;
+
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+div.cont__lab__inp > label {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+div.cont__lab__inp > input {
+    font-size: 1em;
+    background-color: #f8b985;
+    border: 2px solid #e7671d;
+    border-radius: 4px;
+
+    padding: 3px;
+    width: 20%;
+    margin-left: 3px;
+    transition: 1s;
+}
+
+div.cont__lab__inp > input:focus {
+    background-color: white;
+    transition: 0.6s;
+}
