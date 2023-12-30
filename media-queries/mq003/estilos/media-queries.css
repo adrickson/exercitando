@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/* TABLET */
+    :root {
+        --cor-1: #F29F05;
+        --cor-2: #F28705;
+        --cor-3: #F25C05;
+        --cor-4: #D93D04;
+        --cor-5: #F2F2F2;
+    
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, var(--cor-5), var(--cor-1));
+    }
+
+    main {
+        background-image: linear-gradient(to bottom, var(--cor-5), var(--cor-1));
+    }
+}
+
+@media screen and (min-width: 992px){ /*TELAS GRANDES*/
+    :root {
+        --cor-1: #F29F05;
+        --cor-2: #F28705;
+        --cor-3: #F25C05;
+        --cor-4: #D93D04;
+        --cor-5: #F2F2F2;
+    
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, var(--cor-5), var(--cor-1));
+    }
+
+    main {
+        width: 800px;
+        background-image: linear-gradient(to bottom, var(--cor-5), var(--cor-1));
+    }
+
+    section.container__principal {
+        width: 90%;
+    }
+}
