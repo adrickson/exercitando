@@ -14,26 +14,37 @@
     <main>
         <section class="cont__principal">
 
-            <h2>Sistema de Compras </h2>
+            <div class="cont__tit__sec">
+                <h2>Sistema de Compras </h2>
+            </div>
 
-            <div>
+            <div class="cont__form">
                 <label for="cerveja">Cerveja: </label>
-                <input type="number" name="cerveja" id="cerveja">
+                <input type="number" name="cerveja" id="cerveja" min="0" value="0">
             </div>
 
-            <div>
+            <div class="cont__form">
                 <label for="refri">Refrigerante: </label>
-                <input type="number" name="refri" id="refri">
+                <input type="number" name="refri" id="refri"  min="0" value="0">
             </div>
 
-            <div>
-                <input type="button" value="Verificar">
+            <div class="cont__form">
+                <label for="cliente">Dinheiro Cliente: </label>
+                <input type="number" name="cliente" id="cliente" min="0" value="0">
             </div>
 
-            <output>
-                <p>Valor total: </p>
-                <p>Troco: </p>
-            </output>
+            <div class="botao">
+                <input type="button" value="Verificar" onclick="sistema()">
+            </div>
+
+            
+                <div class="cont__res">
+                
+                    <p>Valor total: <output id="res_valor">R$ 0,00</output></p>
+                    
+                    <p>Troco: <output id="res_troco">R$ 0,00</output></p>
+                </div>
+            
 
         </section>
     </main>
@@ -41,5 +52,7 @@
     <footer>
         <p>&copy; Adrickson Almeida</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -38,3 +38,102 @@ main {
     padding: 10px;
     margin-top: 20px;
 }
+
+div.cont__tit__sec {
+    text-align: center;
+
+    display: block;
+    padding: 10px;
+}
+
+div.cont__tit__sec > h2 {
+    background-color: rgb(167, 64, 252);
+    border-radius: 5px 13px;
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.295);
+
+    display: inline-block;
+    padding: 5px;
+}
+
+div.cont__form {
+
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+div.cont__form > label {
+    font-size: 1.1em;
+}
+
+div.cont__form > input {
+    background-color: rgb(199, 137, 250);
+    font-size: 1em;
+    border: 2.5px solid rgb(160, 45, 253);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+
+    padding: 3px;
+    width: 13%;
+}
+
+div.cont__form > input:focus {
+    background-color: white;
+
+    color: purple;
+    font-weight: bolder;
+}
+
+div.botao {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+div.botao > input {
+    cursor: pointer;
+    background-color: rgb(252, 188, 137);
+    font-size: 1em;
+    font-weight: 600;
+    border: 2px solid rgb(253, 133, 34);
+    border-radius: 6px;
+    transition: 0.5s;
+
+    padding: 5px;
+    width: 40%;
+}
+
+div.botao > input:hover{
+    background-color: rgb(255, 175, 110);
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+
+div.cont__res {
+    padding: 10px;
+    
+}
+
+div.cont__res > p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+output {
+    background-color: orange;
+    border-radius: 3px;
+    font-weight: bolder;
+
+    padding: 7px;
+    margin-left: 7px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.1em;
+
+    margin-top: 20px;
+    padding: 10px;
+}
