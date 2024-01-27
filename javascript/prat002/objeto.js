@@ -28,4 +28,3 @@ console.log(pessoa.pNome)
 console.log(pessoa['sNome'])
 
 console.log(pessoa.fullName())
-
