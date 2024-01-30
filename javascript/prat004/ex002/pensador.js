@@ -6,10 +6,13 @@ let frase = {
 
 
     full_year: function() {
-        return `${this.dia.getDate()}/${this.mes.getDay()}/${this.ano.getFullYear()}`
+
+        const mes = this.mes.getMonth() + 1
+
+        return `${this.dia.getDate()}/${mes}/${this.ano.getFullYear()}`
     },
 
-    do_dia: 'Você é mais valente do que acredita, mais forte do que parece e está mais preparado do que imagina.',
+    do_dia: 'Você é mais forte do que pensa e está mais preparado do que imagina',
 }
 
 let retorno = document.getElementById('demo')
