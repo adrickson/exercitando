@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+           height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center; 
+           flex-direction: column;
+        }
+
+        div.container_pai {
+
+            background: black url('valoras.jpg') center center;
+            background-size: cover;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.479);
+
+            width: 570px;
+            height: 570px;
+            padding: 10px;
+        }
+
+        div.container_tits {
+            margin-bottom: 20px;
+        }
+
+        h2.tit_cont {
+            padding: 10px;
+            margin: 20px;
+
+            background-color: rgb(255, 183, 50);
+            border-radius: 10px 20px;
+            color: black;
+            font-size: 2.5em;
+            display: inline-block;
+        }
+
+        div.container_conteu {
+            background-image: linear-gradient(135deg, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0));
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 20px;
+            border: 1px solid rgb(255, 255, 255, 0.18);
+            
+
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        p.topicos {
+            background-color: rgb(255, 183, 50);
+            border-radius: 10px;
+            font-size: 1.2em;
+            display: inline-block;
+
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        p.cont_dados {
+            background-color: lightcoral;
+            border-left: 2px solid rgb(126, 67, 67);
+            border-bottom: 2px solid rgb(126, 67, 67);
+            border-radius: 20px;
+            color: white;
+            text-shadow: 0.5px 0.5px 1px black;
+            font-size: 1.1em;
+            display: inline-block;
+
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container_pai">
+
+        <div class="container_tits">
+
+            <h2 class="tit_cont">Jogo</h2>
+
+        </div>
+
+        <div class="container_conteu">
+
+            <div>
+                <p class="topicos">Título</p>
+            </div>
+
+            <p class="cont_dados" id="titulo">SAIDA DADOS</p>
+
+        </div>
+
+        <div class="container_conteu">
+
+            <div>
+                <p class="topicos">Desenvolvedor</p>
+            </div>
+            
+            <p class="cont_dados" id="dev">SAIDA DADOS</p>
+
+        </div>
+
+        <div class="container_conteu">
+
+            <div>
+                <p class="topicos">Ano do Lançamento</p>
+            </div>
+
+            <p class="cont_dados" id="ano">SAIDA DADOS</p>
+
+        </div>
+
+    </div>
+
+    <script src="jogoobj.js"></script>
+</body>
+</html>
