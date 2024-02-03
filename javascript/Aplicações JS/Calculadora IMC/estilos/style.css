@@ -103,6 +103,11 @@ div.res > input {
     width: 60px;
 }
 
+div.res > span {
+    font-weight: bolder;
+    padding: 5px;
+}
+
 div.botoes {
     text-align: center;
     padding: 5px;
