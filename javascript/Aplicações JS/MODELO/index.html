@@ -106,7 +106,7 @@
 
         <div class="button">
 
-            <button>Calcular</button>
+            <button onclick="calculo()">Calcular</button>
 
         </div>
 
@@ -116,12 +116,12 @@
 
         <div class="cont_res">
 
-            <p>&#x1F4B2; Valor Total: <output>R$ 0,00</output> </p> 
+            <p>&#x1F4B2; Valor Total: <output id="valor_tot">R$ 0,00</output> </p> 
 
         </div>
 
         <div class="cont_res">
-            <p>&#x1F4B8; Troco: <output> R$ 0,00</output></p> 
+            <p>&#x1F4B8; Troco: <output id="troco"> R$ 0,00</output></p> 
         </div>
 
     </section>
@@ -138,5 +138,7 @@
         <p>&copy; Arickson Pinheiro | Black Distribuidora</p>
 
     </footer>
+
+    <script src="sistema.js"></script>
 </body>
 </html>
