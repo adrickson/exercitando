@@ -15,15 +15,128 @@
 
     </header>
 
-    <section class="cont__apresentecao">
+    <section class="cont__apresentacao">
 
-        <div id="logo"></div> <!-- LOGO COLOCADA NO CSS -->
+        <div id="logo">
 
-        <article>
+            <div id="temporario">LOGO</div>
+
+        </div> <!-- LOGO COLOCADA NO CSS -->
+
+        <article class="cont__texto">
             <p>Sistema de caixa para checagem de preço total de produtos e retorno de troco para clientes.</p>
         </article>
 
     </section>
 
+    <section class="cont__sistema">
+
+        <fieldset class="produtos">
+
+            <legend>Cerverjas (P)</legend>
+
+            <div class="cont__lab__inp">
+
+                <label for="itaipava">Caixa Itaipava: </label>
+                <input type="number" name="itaipaiva" id="itaipava">
+
+            </div>
+
+            <div class="cont__lab__inp">
+                <label for="brahma">Caixa Brahma: </label>
+                <input type="number" name="brahma" id="brahma">
+            </div>
+
+            <div class="cont__lab__inp">
+                <label for="devassa">Caixa Devassa: </label>
+                <input type="number" name="devassa" id="devassa">
+            </div>
+
+            <div class="cont__lab__inp">
+
+                <label for="heineken">Caixa Heineken: </label>
+                <input type="number" name="heineken" id="heineken">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset class="produtos">
+
+            <legend>Refrigerantes (1L)</legend>
+
+            <div class="cont__lab__inp">
+
+                <label for="coca">Coca Cola: </label>
+                <input type="number" name="coca" id="coca">
+
+            </div>
+
+            <div class="cont__lab__inp">
+
+                <label for="guarana">Guaraná: </label>
+                <input type="number" name="guarana" id="guarana">
+
+            </div>
+
+            <div class="cont__lab__inp">
+
+                <label for="pepsi">Pepsi: </label>
+                <input type="number" name="pepsi" id="pepsi">
+
+            </div>
+
+            <div class="cont__lab__inp">
+
+                <label for="kuat">Kuat: </label>
+                <input type="number" name="kuat" id="kuat">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset class="produtos">
+            <legend>Dinheiro do Cliente</legend>
+
+            <div class="cont__lab__inp">
+                <label for="dinheiro">Valor Recebido: </label>
+                <input type="number" name="dinheiro" id="dinheiro">
+            </div>
+        </fieldset>
+
+        <div class="button">
+
+            <button>Calcular</button>
+
+        </div>
+
+    </section>
+
+    <section class="res">
+
+        <div class="cont_res">
+
+            <p>&#x1F4B2; Valor Total: <output>R$ 0,00</output> </p> 
+
+        </div>
+
+        <div class="cont_res">
+            <p>&#x1F4B8; Troco: <output> R$ 0,00</output></p> 
+        </div>
+
+    </section>
+
+    <footer id="rodape">
+
+        <div class="atalhos">
+
+            <h2>ATALHO</h2>
+            <a href="index.html">Inicio</a>
+
+        </div>
+
+        <p>&copy; Arickson Pinheiro | Black Distribuidora</p>
+
+    </footer>
 </body>
 </html>
