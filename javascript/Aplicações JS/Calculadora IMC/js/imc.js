@@ -12,12 +12,13 @@ btn_enviar.addEventListener('click', function (e) {
     let nome = cx_nome.value
     let idade = Number(cx_idade.value)
     let peso = Number(cx_peso.value)
+    let altura = Number(cx_altura.value)
 
-    let soma = (idade + peso)
+    let soma_imc = (peso / (altura * altura)).toFixed(2)
 
     // VARIAVEIS DE RETORNO
 
-    cx_imc.value = soma
+    cx_imc.value = soma_imc
 
     // PREVENIR O COMPORTAMENTO PADRÃO DO FORMULÁRIO DE ENVIAR DADOS
     e.preventDefault()
