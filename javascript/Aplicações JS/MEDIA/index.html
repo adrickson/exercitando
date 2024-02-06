@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Media</title>
+</head>
+<body>
+    <main id="conteudo_principal">
+
+        <section class="conteudo" id="formulario">
+
+            <h1>Calcular Média</h1>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+
+                    <label for="nota1">Nota 1: </label>
+                    <input type="number" name="nota1" id="nota1" min="0.0" max="10.0" step="0.1" autofocus required onblur="validarNumero(this)">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="nota2">Nota 2: </label>
+                    <input type="number" name="nota2" id="nota2" min="0.0" max="10.0" step="0.1" required onblur="validarNumero(this)">
+
+                </div>
+
+                <div class="form-group">
+
+                    <input type="submit" value="Calcular" class="botao" id="btn_calcular">
+
+                    <input type="reset" value="Limpar" class="botao" id="btn_limpar">
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+</body>
+</html>
