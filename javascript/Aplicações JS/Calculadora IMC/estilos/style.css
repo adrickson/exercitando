@@ -153,6 +153,6 @@ section#resultado > h2 {
 p.pessoa {
     border-bottom: 1px solid black;
 
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 0px;
+    margin-bottom: 35px;
 }
