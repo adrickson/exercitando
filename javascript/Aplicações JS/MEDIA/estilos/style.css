@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px;
+}
+
+main#conteudo_principal {
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+section.conteudo {
+    padding: 10px;
+}
+
+section.conteudo h1 {
+    font-size: 2.1em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+    padding: 10px;
+}
+
+div.form-group {
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+div.form-group label {
+    color: white;
+    font-size: 1.1em;
+}
+
+div.form-group input {
+    border-radius: 7px;
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+input.botao {
+    cursor: pointer;
+    background-color: rgb(255, 203, 106);
+    font-size: 0.95em;
+}
+
+input.botao:hover {
+    background-color: rgb(252, 184, 59);
+}
+
+div#centro {
+    text-align: center;
+}
+
+.aprovado {
+    background-color: rgb(121, 233, 121);
+}
+
+.recuperacao {
+    background-color: rgb(248, 234, 103);
+}
+
+.reprovado {
+    background-color: rgb(255, 97, 97);
+}
+
+.aviso {
+    background-color: rgb(226, 41, 78);
+    border: 2px solid rgb(124, 24, 44);
+    color: rgb(240, 240, 240);
+    font-weight: 600;
+    border-radius: 10px 20px;
+    line-height: 1.5em;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
+
+    padding: 10px;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}

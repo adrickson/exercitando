@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Media</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main id="conteudo_principal">
@@ -36,10 +37,28 @@
 
                 </div>
 
+                <div class="form-group">
+
+                    <label for="media">Média </label>
+                    <input type="number" name="media" id="media" value="" readonly>
+
+                </div>
+
+                <div class="form-group" id="centro">
+
+                    <input type="text" name="situacao" id="situacao" class="cx" placeholder="Situação Final" readonly>
+
+                </div>
+
             </form>
+
+            <p id="aviso" class=""></p>
 
         </section>
 
     </main>
+
+    <script src="js/media.js"></script>
+
 </body>
 </html>
