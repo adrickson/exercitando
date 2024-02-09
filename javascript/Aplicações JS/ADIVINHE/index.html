@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onload="gerarNumAleatorio()">
     <main id="tela_inicial">
 
         <div class="cont_tits">
@@ -15,24 +15,25 @@
         </div>
 
         <div class="centro">
-            <p>Digite um número entre 0 e 10</p>
+            <p>*Digite um número entre 1 e 10</p>
         </div>
 
-        <section class="conteudo">
+        <div class="box_blur">
+            <section class="conteudo">
+                <div class="inpt">
 
-            <div class="inpt">
-                <input type="number" name="numero" id="numero" class="animar">
-            </div>
+                    <input type="number" name="numero" id="numero" class="animar" onblur="validarNum(this.value)" onclick="tocarMusicaDeFundo() ; ativarBtnChutar()" step="1" min="1" max="10">
 
-            <div class="botao">
+                </div>
 
-                <button id="btnchutar">Chutar</button>
+                <div class="botao">
+                    <button id="btnchutar" onclick="jogar()">Chutar</button>
+                    <button id="btnsom" onclick="ativarDesativarMusica()">&#9835;</button>
+                </div>
+            </section>
+        </div>
 
-                <button id="btnsom">&#9835;</button>
-
-            </div>
-
-        </section>
+        <p id="aviso"></p>
 
     </main>
 
