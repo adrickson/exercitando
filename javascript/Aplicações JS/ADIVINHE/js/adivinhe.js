@@ -100,9 +100,10 @@ function mensagemRapida(mensagem){
 
         aviso.innerHTML = ''
         aviso.classList.remove('acertou')
-        aviso.classList.remove('errou')
+        aviso.classList.remove('maior')
+        aviso.classList.remove('menor')
         numero.value = ''
-    }, 4000)
+    }, 3500)
 }
 
 // VERIFICAR O CHUTE
@@ -115,6 +116,17 @@ function verificarSituacao(situacao){
             mensagemRapida('Acertou, o número secreto era ' + numeroSecreto)
         break
 
+        case 'Maior' :
+
+            aviso.classList.add('maior')
+            mensagemRapida('Número Maior do que o Secreto')
+        break
+
+        case 'Menor' :
+
+            aviso.classList.add('menor')
+            mensagemRapida('Número Menor do que o Secreto')
+        break
     }
 }
 
@@ -132,6 +144,18 @@ function verificarChute(){
         situacao = 'Acertou'
         verificarSituacao(situacao)
         gerarNumAleatorio() // GERAR NOVO NÚMERO SECRETO
+
+    } else if(numChute > numeroSecreto){
+
+        console.log('Número maior que o Número Secreto')
+        situacao = 'Maior'
+        verificarSituacao(situacao)
+
+    } else if (numChute < numeroSecreto){
+
+        console.log('Npumero Menor que o Número Secreto')
+        situacao = 'Menor'
+        verificarSituacao(situacao)
 
     }
 }
