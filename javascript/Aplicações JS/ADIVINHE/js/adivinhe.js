@@ -66,7 +66,7 @@ function validarNum(numero){
 
 //MÉTODOS PARA MANIPULAR A MÚSICA
 
-function tocarMusicadeFundo(){
+function tocarMusicaDeFundo(){
     musica.play()
 }
 
@@ -77,10 +77,61 @@ function ativarDesativarMusica(){
     } else {
         musica.muted = true
     }
-
 }
 
-function pausarMusicaDeFundo(){
-    musica.pause()
+function pausarMusica(){
+    musica.paused
     musica.currentTime = 0
+}
+
+// CRIANDO A FUNÇÃO DE JOGAR
+
+function jogar(){
+    console.log('Jogando')
+    verificarChute()
+}
+
+// CRIANDO CAIXA DE MENSAGEM
+
+function mensagemRapida(mensagem){
+    aviso.innerHTML = mensagem
+
+    setTimeout(function(){
+
+        aviso.innerHTML = ''
+        aviso.classList.remove('acertou')
+        aviso.classList.remove('errou')
+        numero.value = ''
+    }, 4000)
+}
+
+// VERIFICAR O CHUTE
+
+function verificarSituacao(situacao){
+    switch(situacao){
+
+        case 'Acertou' :
+            aviso.classList.add('acertou')
+            mensagemRapida('Acertou, o número secreto era ' + numeroSecreto)
+        break
+
+    }
+}
+
+// VERIFICANDO ACERTO
+
+function verificarChute(){
+    let numChute = parseInt(numero.value)
+
+    console.log('N° do chute ' + contador)
+    console.log('chute ' + numChute)
+
+    if(numChute === numeroSecreto){
+
+        console.log('Acertou')
+        situacao = 'Acertou'
+        verificarSituacao(situacao)
+        gerarNumAleatorio() // GERAR NOVO NÚMERO SECRETO
+
+    }
 }

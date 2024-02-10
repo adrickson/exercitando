@@ -147,3 +147,14 @@ p.estilo_aviso {
         opacity: 0;
     }
 }
+
+p.acertou {
+    background-color: rgb(108, 226, 108);
+    border: 2px solid rgb(57, 121, 57);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    text-align: center;
+    font-size: 1.2em;
+
+    padding: 10px;
+}
