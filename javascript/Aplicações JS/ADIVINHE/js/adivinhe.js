@@ -47,9 +47,40 @@ function validarNum(numero){
     if(numero <= 0 || numero > 10 || isNaN(numero)) {
 
         console.log('Número Inválido')
+        
+        aviso.innerHTML = `[OPS] Você não está digitando um número entre 1 e 10`
+        aviso.classList.add('estilo_aviso')
+
+        setTimeout(function(){
+
+            aviso.innerHTML = ''
+            aviso.classList.remove('estilo_aviso')
+        }, 4000)
+
         bloquearBtnChutar()
     } else {      
         console.log('Botão chutar ativado')
         ativarBtnChutar()
     }
+}
+
+//MÉTODOS PARA MANIPULAR A MÚSICA
+
+function tocarMusicadeFundo(){
+    musica.play()
+}
+
+function ativarDesativarMusica(){
+
+    if(musica.muted) {
+        musica.muted = false
+    } else {
+        musica.muted = true
+    }
+
+}
+
+function pausarMusicaDeFundo(){
+    musica.pause()
+    musica.currentTime = 0
 }
