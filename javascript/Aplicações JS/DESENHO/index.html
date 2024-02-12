@@ -6,6 +6,7 @@
     <title>Memes</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
     <main>
@@ -17,20 +18,27 @@
         <section class="memes">
 
             <ul class="cartoon">
-                <li id="jake"> </li> <!-- TODAS AS IMAGENS ADICIONADAS NO CSS -->
-                <li id="macaco"> </li>
-                <li id="jerry"> </li>
+                <li id="jake" onclick="memeAuAu()" ondblclick="pararMusica()"> </li> <!-- TODAS AS IMAGENS ADICIONADAS NO CSS -->
+                <li id="macaco" onclick="memeGorila()" ondblclick="pararMusica()"> </li>
+                <li id="jerry" onclick="memeJerry()" ondblclick="pararMusica()"> </li>
             </ul>
 
         </section>
 
     </main>
+
+    <footer id="rodape">
+            <p>&copy; 2024 - Adrickson Almeida</p>
+    </footer>
+
     <!-- AUDIO PARA O JS -->
 
-    <audio src="sons/au-au.mpeg" preload="auto"> </audio>
-    <audio src="sons/mc-gorilla.mpeg" preload="auto"> </audio>
-    <audio src="sons/tropa-do-rato.mpeg" preload="auto"> </audio>
+    <audio src="sons/au-au.mpeg" preload="auto" id="somJake"> </audio>
+    <audio src="sons/mc-gorilla.mpeg" preload="auto" id="somGorila"> </audio>
+    <audio src="sons/tropa-do-rato.mpeg" preload="auto" id="somJerry"> </audio>
 
     <!-- LINK PARA O JS EXTERNO -->
+
+    <script src="js/memes.js"></script>
 </body>
 </html>

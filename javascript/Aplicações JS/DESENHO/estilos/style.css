@@ -17,6 +17,8 @@ body {
 main {
     background-color: rgb(20, 0, 53);
     color: white;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 
     width: 90%;
     height: 100vh;
@@ -80,4 +82,33 @@ ul.cartoon > li:hover{
     box-shadow: 0px 0px 12px rgb(113, 163, 255);
     border-radius: 30%;
     transform: scale(1.1);
+}
+
+li#jake {
+    background: url('../imagens/jake.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+li#macaco {
+    background: url('../imagens/macaco-louco.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+li#jerry {
+    background: url('../imagens/jerry.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+footer#rodape {
+    background-color: rgb(20, 0, 53);
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    padding: 10px;
+    width: 90%;
+    display: block;
+    margin-top: 20px;
 }
