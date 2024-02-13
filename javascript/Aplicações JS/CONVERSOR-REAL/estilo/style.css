@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 41, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.cont_tit {
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.cont_tit > h1 {
+    color: white;
+    font-size: 2.1em;
+    display: inline-block;
+    padding: 10px;
+}
+
+section.conteudos {
+    
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+div.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+div.form-group > label {
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+}
+
+div.form-group > input {
+    padding: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid black;
+
+    transform: translateY(-3px);
+}
+
+input.radio {
+    margin-right: 3px;
+}
+
+label.radio {
+   margin-right: 10px;
+}
+
+div.botoes {
+    padding: 10px;
+    text-align: center;
+}
+
+div.botoes > button {
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 6px;
+    border: none;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+button#btnLimpar {
+    background-color: crimson;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button#btnLimpar:hover{
+    background-color: rgb(136, 13, 38);
+}

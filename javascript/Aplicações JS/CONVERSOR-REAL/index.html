@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="moedas/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="cont_tit">
+            <h1>Conversor de Moedas</h1>
+        </div>
+
+        <section class="conteudos">
+
+            <div class="form-group">
+
+                <label for="valorEmReal">R$ </label>
+                <input type="number" name="valorEmReal" id="valorEmReal" step="0.01" min="0" value="" required autofocus onclick="ativarBotao()" onchange="ativarBotao()">
+
+            </div>
+
+            <div class="form-group">
+
+                <input type="radio" name="moedaEstrangeira" id="dolar" value="Dólar" class="radio">
+                <label for="dolar" class="radio">Dólar</label>
+
+                <input type="radio" name="moedaEstrangeira" id="euro" value="Euro" class="radio">
+                <label for="euro" class="radio">Euro</label>
+
+                <input type="radio" name="moedaEstrangeira" id="libra" value="Libra" class="radio">
+                <label for="libra" class="radio">Libra</label>
+
+            </div>
+
+            <div class="botoes">
+
+                <button class="desativado" id="btnConverter" onclick="ativarBotao(); bloquearBotao()" disabled>Converter</button>
+                <button type="reset" id="btnLimpar">Limpar</button>
+
+            </div>
+
+        </section>
+
+        <div class="instrucoes">
+
+            <p class="centro" id="aviso">Digite o valor, escolha a moeda e converter.</p>
+
+        </div>
+
+        <div class="moedas">
+
+            <div id="real">
+                <img src="moedas/real.png" alt="Imagem do Real">
+            </div>
+
+            <div id="libra">
+                <img src="moedas/libra.png" alt="Imagem da Libra">
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
