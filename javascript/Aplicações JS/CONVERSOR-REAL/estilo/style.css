@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+
+/* ANIMAÇÕES */
+
+@keyframes brilho {
+    0% {
+        box-shadow: 0px 0px 0px goldenrod;
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px goldenrod;
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px goldenrod;
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -96,4 +113,42 @@ button#btnLimpar {
 
 button#btnLimpar:hover{
     background-color: rgb(136, 13, 38);
+}
+
+div.instrucoes {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div.instrucoes > p {
+    padding: 12px;
+    background-color: white;
+    font-size: 1.3em;
+    border-radius: 7px;
+}
+
+div.moedas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div#real {
+    margin-right: 30px;
+}
+
+div#libra {
+    margin-left: 30px;
+}
+
+div#real > img {
+    width: 150px;
+    animation: brilho 2.1s ease-in-out infinite;
+    border-radius: 50%;
+}
+
+div#libra > img {
+    width: 150px;
+    animation: brilho 2.1s ease-in-out infinite;
+    border-radius: 50%;
 }
