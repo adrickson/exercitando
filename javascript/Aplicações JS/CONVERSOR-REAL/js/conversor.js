@@ -2,7 +2,7 @@
 
 // COLETAR AS INFORMAÇÕES NECESSÁRIAS
 
-let valorDigitado = document.querySelector('#valorEmReal')
+let valorDigitado = document.getElementById('valorEmReal')
 
 //Selecionar os radios (criar um array deles)
 
@@ -12,7 +12,7 @@ let aviso = document.querySelector('#aviso')
 
 //Selecionar os Botões
 
-let btnConverter = document.querySelector('#btnConverter')
+let btnConverter = document.getElementById('btnConverter')
 let btnLimpar = document.querySelector('#btnLimpar')
 
 //COTAÇÕES DO DIA 14/02/2024
@@ -33,4 +33,14 @@ function mensagemFormatada(moedaConvertida){
     console.log('Moeda Convertida:' + moedaConvertida)
 
     aviso.innerHTML = `O valor ${valorEmReal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} convertido em ${moedaEstrangeira} é ${moedaConvertida}`
+}
+
+//VERIFICAR SE ALGUM VALOR FOI DIGITADO PARA PODER CONVERTER
+
+function bloquearBotao(){
+    if(valorDigitado.value == 0 || valorDigitado == '' || valorDigitado == null){
+        btnConverter.setAttribute('disabled', 'disabled')
+        btnConverter.style.backgroundColor = '#ccc'
+        btnConverter.style.cursor = 'not-allowed'
+    }
 }
