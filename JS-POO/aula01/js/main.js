@@ -23,6 +23,46 @@ class Pessoa
     calculaImc(){
         return ( this._peso / (this._altura * this._altura) ).toFixed(2)
     }
+
+    //método get = pegar
+
+    get nome(){
+        return this._nome
+    }
+
+    get idade(){
+        return this._idade
+    }
+
+    get peso(){
+        return this._peso
+    }
+
+    get altura(){
+        return this._altura
+    }
+
+    get imc(){
+        return this._imc
+    }
+
+    //set = configurar, editar, alterar
+
+    set nome(novoNome){
+        this._nome = novoNome
+    }
+
+    set idade(novaIdade){
+        this._idade = novaIdade
+    }
+
+    set peso(novoPeso){
+        this._peso = novoPeso
+    }
+
+    set altura(novaAltura){
+        this._altura = novaAltura
+    }
 }
 
 // criar novo objeto a partir da classe, instanciar
@@ -31,6 +71,19 @@ let pessoa1 = new Pessoa('Adrickson Pinheiro', 19, 70.5, 1.84)
 let pessoa2 = new Pessoa('Paula', 19, 60.3, 1.61)
 let pessoa3 = new Pessoa('Ana', 19, 65.3, 1.65)
 let pessoa4 = new Pessoa('Roberta', 21, 58.3, 1.69)
+
+console.log('Nome ' + pessoa1.nome)
+console.log('Idade ' + pessoa1.idade)
+console.log('IMC' + pessoa1.imc)
+console.log('Peso ' + pessoa1.peso)
+
+pessoa1.nome = 'Ace'
+pessoa1.idade = '20'
+pessoa1.peso = 80.0
+
+console.log('Nome ' + pessoa1.nome)
+console.log('Idade ' + pessoa1.idade)
+console.log('Peso ' + pessoa1.peso)
 
 //Atribuir valores para os atributos de um objeto
 
