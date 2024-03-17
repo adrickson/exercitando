@@ -8,6 +8,7 @@ class Pessoa
     _peso
     _altura
     _imc
+    static totalPessoas = 0
     //métodos = funções ou comportamentos 
 
     //Método construtor
@@ -18,6 +19,7 @@ class Pessoa
         this._peso = peso
         this._altura = altura
         this._imc = this._peso / (this._altura * this._altura)
+        Pessoa.totalPessoas += 1
     }
 
     calculaImc(){
@@ -46,6 +48,10 @@ class Pessoa
         return this._imc
     }
 
+    get totalPessoas(){
+        return Pessoa.totalPessoas
+    }
+
     //set = configurar, editar, alterar
 
     set nome(novoNome){
@@ -71,6 +77,8 @@ let pessoa1 = new Pessoa('Adrickson Pinheiro', 19, 70.5, 1.84)
 let pessoa2 = new Pessoa('Paula', 19, 60.3, 1.61)
 let pessoa3 = new Pessoa('Ana', 19, 65.3, 1.65)
 let pessoa4 = new Pessoa('Roberta', 21, 58.3, 1.69)
+
+console.log(Pessoa.totalPessoas)
 
 console.log('Nome ' + pessoa1.nome)
 console.log('Idade ' + pessoa1.idade)
